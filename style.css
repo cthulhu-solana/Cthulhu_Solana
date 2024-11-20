@@ -1,167 +1,182 @@
-/* Base styles */
+/* General Styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Courier New', monospace;
-  background-color: #0d1117;
-  color: #c9d1d9;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: monospace;
+  background-color: #f8f9fa; /* Light background */
+  color: #212529; /* Dark text for contrast */
+}
+
+/* Header Title */
+h1.title {
   text-align: center;
-}
-
-/* Header Section */
-header {
-  padding: 20px;
-  border-bottom: 2px solid #58a6ff;
-}
-
-.title {
-  font-size: 3rem;
-  color: #58a6ff;
-}
-
-.subtitle {
-  font-size: 1.5rem;
+  font-size: 28px;
+  font-weight: bold;
   font-style: italic;
-  margin-top: 10px;
-  color: #8b949e;
+  color: #007bff; /* Blue accent */
 }
 
-/* Banner */
-.banner {
-  background: linear-gradient(135deg, #0a0f15, #2b3440);
-  padding: 40px 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-}
-
-.banner-text {
-  font-size: 2rem;
+/* Subtitles and Text */
+.t1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
   font-style: italic;
-  color: #c9d1d9;
+}
+
+.t2 {
+  text-align: center;
+  font-size: 16px;
+  margin: 15px 0;
 }
 
 /* Links Section */
-.links {
-  margin: 40px 0;
-}
-
-.links h2 {
-  font-size: 1.8rem;
-  color: #8b949e;
-  margin-bottom: 20px;
+.t3 {
+  text-align: center;
+  margin-top: 15px;
 }
 
 .t3 a {
-  color: #58a6ff;
+  margin: 10px;
   text-decoration: none;
-  margin: 10px 20px;
-  font-size: 1.2rem;
-  display: inline-block;
-}
-
-.t3 img {
-  vertical-align: middle;
-  margin-right: 10px;
+  font-weight: bold;
+  color: #007bff;
 }
 
 .t3 a:hover {
   text-decoration: underline;
-  color: #c9d1d9;
+  color: #0056b3;
 }
 
-/* Interactive Section */
-.interactive {
-  margin: 40px 0;
-  padding: 20px;
-  border: 2px solid #58a6ff;
+.t3 img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Tentacles & Interactive Elements */
+.tentacle {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.tentacle img {
+  cursor: pointer;
+  box-sizing: content-box;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  transition: border 0.3s, transform 0.3s;
+}
+
+.tentacle:hover img {
+  border: 3px solid #007bff;
+  transform: scale(1.1);
+}
+
+.tentacle-tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+.tentacle:hover .tentacle-tooltip {
+  visibility: visible;
+}
+
+/* Thoughts Modal */
+#thoughts {
+  display: none;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border: 1px solid black;
   border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.interactive h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #c9d1d9;
+#thoughts-header {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.interactive button {
-  background-color: #161b22;
-  color: #58a6ff;
-  font-size: 1rem;
-  border: 2px solid #58a6ff;
-  border-radius: 8px;
-  padding: 10px 20px;
+#thought-list {
+  margin: 10px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+#closeThoughts {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  transition: 0.3s;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ff5c5c;
 }
 
-.interactive button:hover {
-  background-color: #58a6ff;
-  color: #0d1117;
+#closeThoughts:hover {
+  color: #dc3545;
 }
 
-.prophecy {
+/* About and Meme Sections */
+h1, h2 {
   margin-top: 20px;
-  font-style: italic;
-  color: #8b949e;
-  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
 }
 
-/* Meme Gallery */
-.meme-gallery {
-  margin: 40px 0;
-  padding: 20px;
+.meme-gallery img {
+  display: block;
+  max-width: 100%;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  transition: transform 0.3s, border-color 0.3s;
 }
 
-.meme-gallery h2 {
-  font-size: 1.8rem;
-  color: #8b949e;
-  margin-bottom: 20px;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.meme {
-  width: 150px;
-  border: 2px solid #8b949e;
-  border-radius: 8px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.meme:hover {
-  border-color: #58a6ff;
+.meme-gallery img:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
 }
 
 /* Footer */
 footer {
-  padding: 20px;
-  border-top: 2px solid #58a6ff;
   margin-top: 40px;
-  color: #8b949e;
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  color: #555;
+  font-size: 14px;
 }
 
-footer p {
-  margin: 5px 0;
+footer a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-/* Audio Toggle Button */
-#toggle-audio {
-  background-color: #161b22;
-  color: #c9d1d9;
-  border: 2px solid #58a6ff;
-  border-radius: 8px;
-  padding: 10px 20px;
-  margin: 20px auto;
-  cursor: pointer;
-  display: block;
-  transition: 0.3s;
-}
-
-#toggle-audio:hover {
-  background-color: #58a6ff;
-  color: #0d1117;
+footer a:hover {
+  text-decoration: underline;
 }
