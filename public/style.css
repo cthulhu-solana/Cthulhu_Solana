@@ -1,0 +1,43 @@
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  h1.title {
+    font-size: 2.5rem;
+    color: #58a6ff;
+  }
+  
+  .t1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .t3 img {
+    vertical-align: middle;
+    margin: 5px;
+  }
+  
+  .interactive h2 {
+    color: #8b949e;
+  }
+  
+  .interactive button {
+    background-color: #161b22;
+    color: #c9d1d9;
+    border: 2px solid #58a6ff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .interactive button:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+  }
+  
