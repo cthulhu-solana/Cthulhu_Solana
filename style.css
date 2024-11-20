@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   padding: 10px;
   margin: auto;
@@ -49,121 +50,7 @@ header {
   text-decoration: underline;
 }
 
-.section-title {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.meme-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 15px;
-}
-
-.meme-item {
-  width: 150px;
-  text-align: center;
-}
-
-.meme-item img {
-  width: 100%;
-  border: 2px solid black;
-  border-radius: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.meme-item img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.meme-item p {
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.about-text {
-  text-align: justify;
-  margin: 20px 0;
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.interactive {
-  margin: 20px 0;
-}
-
-.interactive h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.interactive p {
-  font-size: 12px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.interactive input[type="text"],
-.interactive input[type="file"] {
-  display: block;
-  margin: 10px auto;
-  padding: 5px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.interactive button {
-  display: block;
-  margin: 0 auto;
-  padding: 5px 10px;
-  font-size: 14px;
-  border: 1px solid black;
-  background-color: #0066cc;
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.interactive button:hover {
-  background-color: #004999;
-}
-
-canvas {
-  display: block;
-  margin: 0 auto;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  font-size: 12px;
-  margin-top: 40px;
-  color: #333333;
-}
-
-.footer-text {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-footer a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #0066cc;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-
+/* Slideshow Styles */
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -177,6 +64,8 @@ footer a:hover {
 
 .slide img {
   width: 100%;
+  max-height: 400px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -200,9 +89,48 @@ footer a:hover {
   background-color: gray;
 }
 
-.meme-gallery .meme-item.large img {
+/* Memes Section */
+.meme-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.meme-item.large img {
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+/* About Section */
+.about-text {
+  text-align: justify;
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 40px;
+  color: #333333;
+}
+
+.footer-text {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
