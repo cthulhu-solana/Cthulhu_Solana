@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./assets/favicon.png" type="image/png">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
-  <title>Cthulhu Solana</title>
+  <title>Shoggoth</title>
 </head>
+
 <body>
-  <!-- Header Section -->
-  <header>
-    <h1 class="title">Cthulhu Solana</h1>
-    <p class="subtitle">"Where blockchain meets the cosmic unknown."</p>
-  </header>
+  <h1 class="title">Shoggoth</h1>
 
-  <!-- Main Banner Section -->
-  <section class="banner">
-    <h2 class="banner-text">"Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn."</h2>
-    <p class="token">H2c31USxu35MDkBrGph8pUDUnmzo2e4Rf4hnvL2Upump</p>
-  </section>
-
-  <!-- Links Section -->
-  <section class="links">
-    <h2>Explore</h2>
-    <div class="icon-links">
-      <a href="https://x.com/Cthulhu_Solana">
-        <img src="./assets/twitter.ico" alt="Twitter" width="24"> Twitter
-      </a>
-      <a href="https://dexscreener.com">
-        <img src="./assets/dexscreener.ico" alt="Dexscreener" width="24"> Dexscreener
-      </a>
-      <a href="https://t.me/CthulhuCoin">
-        <img src="./assets/telegram.ico" alt="Telegram" width="24"> Telegram
-      </a>
-      <a href="https://www.nytimes.com/2023/05/30/technology/shoggoth-meme-ai.html">
-        <img src="./assets/nyt.ico" alt="New York Times" width="24"> NYT Article
-      </a>
+  <div>
+    <div class="t1">
+      Why an Octopus-like Creature Has<br>
+      Come to Symbolize the State of A.I.
     </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about">
-    <h2>About</h2>
-    <p>
-      Cthulhu Solana dives deep into the mysteries of blockchain and AI. Inspired by Lovecraft’s mythos,
-      we aim to unveil the unknowable, connecting the modern digital age with cosmic horror.
-    </p>
-    <p>
-      From the blobby, alien shoggoths of artificial intelligence to the ancient rites of cryptocurrency,
-      this is where your curiosity meets the abyss.
-    </p>
-  </section>
-
-  <!-- Interactive Prophecy Section -->
-  <section class="interactive">
-    <h2>What Am I Thinking?</h2>
-    <button id="generate">Reveal a Cosmic Truth</button>
-    <p class="prophecy" id="prophecy"></p>
-  </section>
-
-  <!-- Meme Section -->
-  <section class="meme-gallery">
-    <h2>Meme Gallery</h2>
-    <div class="gallery">
-      <img src="./assets/meme1.png" alt="Meme 1" class="meme">
-      <img src="./assets/meme2.png" alt="Meme 2" class="meme">
-      <img src="./assets/meme3.png" alt="Meme 3" class="meme">
+    <br>
+    <div class="t2">
+      The Shoggoth, a character from a science fiction story,<br>
+      captures the essential weirdness of the A.I. moment.
     </div>
-  </section>
+    <br>
+  </div>
 
-  <!-- Meme Generator -->
-  <section class="meme-generator">
-    <h2>Create Your Own Meme</h2>
-    <p>Generate cosmic memes that echo into eternity.</p>
-    <div>
-      <input type="file" id="upload-meme" accept="image/*">
-      <button id="generate-meme">Generate Meme</button>
+  <div class="t3">
+    <div>H2c31USxu35MDkBrGph8pUDUnmzo2e4Rf4hnvL2Upump</div>
+    <br>
+    <a href="https://twitter.com/Shoggoth_SOL">
+      <img src="twitter.ico" alt="Twitter" width="24"> Twitter
+    </a>
+    <a href="https://dexscreener.com/solana/H2c31USxu35MDkBrGph8pUDUnmzo2e4Rf4hnvL2Upump">
+      <img src="dexscreener.ico" alt="Dexscreener" width="24"> Dexscreener
+    </a>
+    <a href="https://t.me/shoggothcoin">
+      <img src="tg.ico" alt="Telegram" width="24"> Telegram
+    </a>
+    <a href="https://www.nytimes.com/2023/05/30/technology/shoggoth-meme-ai.html">
+      <img src="nyt.ico" alt="New York Times" width="24"> New York Times
+    </a>
+  </div>
+  <br>
+
+  <div id="thoughts">
+    <div id="thoughts-header">
+      <div style="position: absolute; top: 10px; left: 10px;">
+        <a id="tentacle-twitter1">
+          <img id="tentacle-image" alt="Tentacle Image" src="data:," width="50">
+        </a>
+      </div>
+      <button id="closeThoughts">&times;</button>
+      <div style="text-align: center;">
+        <span id="tentacle-name"></span>&nbsp;
+        <a id="tentacle-twitter2">
+          <img src="twitter.ico" alt="Twitter" width="24">
+        </a>
+      </div>
     </div>
-    <canvas id="meme-canvas"></canvas>
-  </section>
+    <div id="thought-list">Loading...</div>
+  </div>
 
-  <!-- Footer -->
+  <div style="position: relative; width: 500px; margin: 0 auto;">
+    <img src="shoggoth.png" width="500" alt="Shoggoth" style="display: block;">
+    <div id="scholar" class="tentacle" style="left:93%; top:55%;">
+      <span class="tentacle-tooltip">The Scholar</span>
+      <img src="scholar.jpg" alt="Scholar image">
+    </div>
+    <div id="child" class="tentacle" style="left:81%; top:85%;">
+      <span class="tentacle-tooltip">The Child</span>
+      <img src="child.jpg" alt="Child image">
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    What am I thinking?
+  </div>
+  <br>
+  <br>
+
+  <div style="width: 600px; margin: 0 auto;">
+    <h1>About</h1>
+    <p>What’s happening in AI today feels, to some of its participants, more like an act of summoning than a software
+      process...</p>
+    <a href="https://www.nytimes.com/2023/05/30/technology/shoggoth-meme-ai.html">Read more at the New York Times</a>
+    <br><br>
+    <h1>Memes</h1>
+    <img src="meme1.jpg" width="600" alt="Meme 1">
+    <img src="meme2.jpg" width="600" alt="Meme 2">
+    <img src="meme3.jpg" width="600" alt="Meme 3">
+  </div>
+
   <footer>
-    <p>© 2024 Cthulhu Solana. Powered by blockchain, inspired by Lovecraft.</p>
-    <p><a href="about.html">About Us</a> | <a href="memes.html">More Memes</a></p>
+    <p>&copy; 2024 Shoggoth. Inspired by Lovecraft's mythos.</p>
   </footer>
 
-  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
+
 </html>
