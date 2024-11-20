@@ -10,7 +10,7 @@ body {
 
 /* Header Section */
 header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -20,20 +20,22 @@ header {
 
 .subtitle {
   font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.tagline {
-  font-size: 1rem;
-  margin-top: 10px;
-  font-style: italic;
   color: #d0d0d0;
+  margin-top: 5px;
 }
 
 /* Hero Section */
 .hero p {
   font-size: 1.2rem;
+  color: #d0d0d0;
+  margin: 10px 0;
+}
+
+.wallet {
   margin: 20px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00ffaa;
 }
 
 .links a {
@@ -48,39 +50,9 @@ header {
   text-decoration: underline;
 }
 
-/* About Section */
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #00aaff;
-}
-
-.about p {
-  margin: 10px 0;
-  line-height: 1.5;
-  font-size: 1rem;
-  color: #d0d0d0;
-}
-
-/* Memes Section */
-.memes h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #00aaff;
-}
-
-.memes p {
-  font-size: 1rem;
-  color: #d0d0d0;
-}
-
 /* Footer */
 footer {
   margin-top: 50px;
   font-size: 0.8rem;
   color: #707070;
-}
-
-footer p {
-  margin: 5px 0;
 }
