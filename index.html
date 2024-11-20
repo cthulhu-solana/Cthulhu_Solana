@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
   <title>Cthulhu Solana</title>
 </head>
@@ -11,61 +11,82 @@
   <!-- Header Section -->
   <header>
     <h1 class="title">Cthulhu Solana</h1>
-    <p class="subtitle">"Welcome to the abyss, where blockchain meets the unknowable."</p>
+    <p class="subtitle">"Where blockchain meets the cosmic unknown."</p>
   </header>
 
-  <!-- Animated Banner -->
+  <!-- Main Banner Section -->
   <section class="banner">
     <h2 class="banner-text">"Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn."</h2>
+    <p class="token">H2c31USxu35MDkBrGph8pUDUnmzo2e4Rf4hnvL2Upump</p>
   </section>
 
-  <!-- Call to Action Links -->
+  <!-- Links Section -->
   <section class="links">
-    <h2>Explore the Depths</h2>
-    <div class="t3">
+    <h2>Explore</h2>
+    <div class="icon-links">
       <a href="https://x.com/Cthulhu_Solana">
-        <img src="../assets/twitter.ico" alt="Twitter" width="24"> Twitter
+        <img src="./assets/twitter.ico" alt="Twitter" width="24"> Twitter
       </a>
       <a href="https://dexscreener.com">
-        <img src="../assets/dexscreener.ico" alt="Dexscreener" width="24"> Dexscreener
+        <img src="./assets/dexscreener.ico" alt="Dexscreener" width="24"> Dexscreener
       </a>
       <a href="https://t.me/CthulhuCoin">
-        <img src="../assets/telegram.ico" alt="Telegram" width="24"> Telegram
+        <img src="./assets/telegram.ico" alt="Telegram" width="24"> Telegram
+      </a>
+      <a href="https://www.nytimes.com/2023/05/30/technology/shoggoth-meme-ai.html">
+        <img src="./assets/nyt.ico" alt="New York Times" width="24"> NYT Article
       </a>
     </div>
   </section>
 
-  <!-- Interactive Prophecy Generator -->
+  <!-- About Section -->
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      Cthulhu Solana dives deep into the mysteries of blockchain and AI. Inspired by Lovecraft’s mythos,
+      we aim to unveil the unknowable, connecting the modern digital age with cosmic horror.
+    </p>
+    <p>
+      From the blobby, alien shoggoths of artificial intelligence to the ancient rites of cryptocurrency,
+      this is where your curiosity meets the abyss.
+    </p>
+  </section>
+
+  <!-- Interactive Prophecy Section -->
   <section class="interactive">
     <h2>What Am I Thinking?</h2>
     <button id="generate">Reveal a Cosmic Truth</button>
     <p class="prophecy" id="prophecy"></p>
   </section>
 
-  <!-- Meme Gallery -->
+  <!-- Meme Section -->
   <section class="meme-gallery">
     <h2>Meme Gallery</h2>
     <div class="gallery">
-      <img src="../assets/meme1.png" alt="Meme 1" class="meme">
-      <img src="../assets/meme2.png" alt="Meme 2" class="meme">
-      <img src="../assets/meme3.png" alt="Meme 3" class="meme">
+      <img src="./assets/meme1.png" alt="Meme 1" class="meme">
+      <img src="./assets/meme2.png" alt="Meme 2" class="meme">
+      <img src="./assets/meme3.png" alt="Meme 3" class="meme">
     </div>
+  </section>
+
+  <!-- Meme Generator -->
+  <section class="meme-generator">
+    <h2>Create Your Own Meme</h2>
+    <p>Generate cosmic memes that echo into eternity.</p>
+    <div>
+      <input type="file" id="upload-meme" accept="image/*">
+      <button id="generate-meme">Generate Meme</button>
+    </div>
+    <canvas id="meme-canvas"></canvas>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2024 Cthulhu Solana. Inspired by Lovecraft and Ancient Myths.</p>
-    <p>Built on the mysteries of blockchain and AI.</p>
+    <p>© 2024 Cthulhu Solana. Powered by blockchain, inspired by Lovecraft.</p>
+    <p><a href="about.html">About Us</a> | <a href="memes.html">More Memes</a></p>
   </footer>
 
-  <!-- Background Audio -->
-  <audio id="background-audio" loop>
-    <source src="../assets/cthulhu-theme.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <button id="toggle-audio">Toggle Background Audio</button>
-
-  <!-- JavaScript -->
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
