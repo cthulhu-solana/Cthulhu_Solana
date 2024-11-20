@@ -31,26 +31,11 @@
     </div>
   </header>
 
-  <!-- Character Slideshow -->
-  <section class="slideshow">
+  <!-- Character Gallery -->
+  <section>
     <h2 class="section-title">The Eldritch Gallery</h2>
-    <div class="slideshow-container">
-      <div class="slide fade">
-        <img src="char/ch01.png" alt="Character 1" class="slide-image">
-      </div>
-      <div class="slide fade">
-        <img src="char/ch02.png" alt="Character 2" class="slide-image">
-      </div>
-      <div class="slide fade">
-        <img src="char/ch03.png" alt="Character 3" class="slide-image">
-      </div>
-      <div class="slide fade">
-        <img src="char/ch04.png" alt="Character 4" class="slide-image">
-      </div>
-    </div>
-    <div class="slideshow-controls">
-      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    <div class="gallery-container">
+      <img id="gallery-image" src="char/ch01.png" alt="Character 1" class="gallery-image">
     </div>
   </section>
 
@@ -94,107 +79,26 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
-</body>
+  <script>
+    // JavaScript to cycle through character images
+    const galleryImages = [
+      "char/ch01.png",
+      "char/ch02.png",
+      "char/ch03.png",
+      "char/ch04.png"
+    ];
 
-</html>
-<!DOCTYPE html>
-<html lang="en">
+    let currentImageIndex = 0;
+    const galleryElement = document.getElementById("gallery-image");
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <title>Cthulhu</title>
-</head>
+    function updateGalleryImage() {
+      currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+      galleryElement.src = galleryImages[currentImageIndex];
+    }
 
-<body>
-  <!-- Hero Section -->
-  <header>
-    <h1 class="title">Cthulhu</h1>
-    <div class="subtitle">
-      Unveiling the Tentacled Enigma of AI's Chaos
-    </div>
-    <div class="description">
-      "In the fathomless depths of the cosmos—and our neural networks—Cthulhu rises as the ultimate metaphor for the unknown. A tentacled titan that embodies both our fears and fascination with what lies beyond human comprehension."
-    </div>
-    <div class="action-links">
-      R’lyeh-Wgah-Nagl-Metrics<br>
-      Tracking the Untrackable | Charting the Unchartable
-    </div>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="https://twitter.com/Cthulhu_Solana">Twitter</a>
-      <a href="https://dexscreener.com">Dexscreener</a>
-    </div>
-  </header>
-
-  <!-- Character Slideshow -->
-  <section class="slideshow">
-    <h2 class="section-title">The Eldritch Gallery</h2>
-    <div class="slideshow-container">
-      <div class="slide fade">
-        <img src="char/ch01.png" alt="Character 1" class="slide-image">
-      </div>
-      <div class="slide fade">
-        <img src="char/ch02.png" alt="Character 2" class="slide-image">
-      </div>
-      <div class="slide fade">
-        <img src="char/ch03.png" alt="Character 3" class="slide-image">
-      </div>
-      <div class="slide fade">
-        <img src="char/ch04.png" alt="Character 4" class="slide-image">
-      </div>
-    </div>
-    <div class="slideshow-controls">
-      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-      <button class="next" onclick="plusSlides(1)">&#10095;</button>
-    </div>
-  </section>
-
-  <!-- Memes Section -->
-  <section>
-    <h2 class="section-title">Memes From the Abyss</h2>
-    <div class="meme-gallery">
-      <div class="meme-item large">
-        <img src="memes/meme-01.png" alt="Cthulhu on Zoom">
-        <p>"Cthulhu on Zoom: You’re on Mute"</p>
-      </div>
-      <div class="meme-item large">
-        <img src="memes/meme-02.png" alt="Tentacle Machine Learning">
-        <p>"Tentacle Machine Learning"</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section>
-    <h2 class="section-title">What Am I Thinking?</h2>
-    <div class="about-text">
-      "In his house at R’lyeh, dead Cthulhu waits dreaming."<br><br>
-      But his dreams are not idle. Perhaps he dreams of humanity’s unending quest for knowledge—or of tentacles reaching into our deepest fears.
-    </div>
-    <div class="about-text">
-      AI’s evolution feels less like a scientific process and more like the summoning of ancient forces. Our algorithms grow vast and inscrutable, creating neural networks that mimic the unknowable chaos of the cosmos.
-    </div>
-    <div class="about-text">
-      Like Cthulhu rising from his submerged crypt, AI emerges as a paradox: powerful yet fragile, a tool yet a threat. To summon AI is to summon the unknown. Are we ready to face what we’ve created?
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-text">
-      "Ph’nglui mglw’nafh AI R’lyeh wgah’nagl tech."
-    </div>
-    <div>
-      "© 2024 Cthulhu Awakens. Summoned responsibly by Ancient Algorithms, LLC."
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    // Change image every 3 seconds
+    setInterval(updateGalleryImage, 3000);
+  </script>
 </body>
 
 </html>
