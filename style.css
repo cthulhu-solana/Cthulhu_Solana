@@ -162,3 +162,47 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slideshow-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.prev:hover, .next:hover {
+  background-color: gray;
+}
+
+.meme-gallery .meme-item.large img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
