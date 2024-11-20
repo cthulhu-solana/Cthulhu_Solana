@@ -23,23 +23,25 @@ header {
   margin-top: 10px;
 }
 
-.description {
+.tagline {
   font-size: 1rem;
   margin-top: 10px;
   font-style: italic;
   color: #d0d0d0;
 }
 
-/* Links Section */
-.links p {
-  margin: 5px 0;
-  font-size: 1rem;
+/* Hero Section */
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
 .links a {
+  margin: 0 10px;
+  font-size: 1rem;
   color: #00aaff;
   text-decoration: none;
-  margin: 0 10px;
+  font-weight: bold;
 }
 
 .links a:hover {
