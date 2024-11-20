@@ -1,0 +1,167 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  text-align: center;
+}
+
+/* Header Section */
+header {
+  padding: 20px;
+  border-bottom: 2px solid #58a6ff;
+}
+
+.title {
+  font-size: 3rem;
+  color: #58a6ff;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 10px;
+  color: #8b949e;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(135deg, #0a0f15, #2b3440);
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.banner-text {
+  font-size: 2rem;
+  font-style: italic;
+  color: #c9d1d9;
+}
+
+/* Links Section */
+.links {
+  margin: 40px 0;
+}
+
+.links h2 {
+  font-size: 1.8rem;
+  color: #8b949e;
+  margin-bottom: 20px;
+}
+
+.t3 a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.t3 img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.t3 a:hover {
+  text-decoration: underline;
+  color: #c9d1d9;
+}
+
+/* Interactive Section */
+.interactive {
+  margin: 40px 0;
+  padding: 20px;
+  border: 2px solid #58a6ff;
+  border-radius: 10px;
+}
+
+.interactive h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #c9d1d9;
+}
+
+.interactive button {
+  background-color: #161b22;
+  color: #58a6ff;
+  font-size: 1rem;
+  border: 2px solid #58a6ff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.interactive button:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+.prophecy {
+  margin-top: 20px;
+  font-style: italic;
+  color: #8b949e;
+  font-size: 1.2rem;
+}
+
+/* Meme Gallery */
+.meme-gallery {
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.meme-gallery h2 {
+  font-size: 1.8rem;
+  color: #8b949e;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.meme {
+  width: 150px;
+  border: 2px solid #8b949e;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.meme:hover {
+  border-color: #58a6ff;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  border-top: 2px solid #58a6ff;
+  margin-top: 40px;
+  color: #8b949e;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Audio Toggle Button */
+#toggle-audio {
+  background-color: #161b22;
+  color: #c9d1d9;
+  border: 2px solid #58a6ff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  cursor: pointer;
+  display: block;
+  transition: 0.3s;
+}
+
+#toggle-audio:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
