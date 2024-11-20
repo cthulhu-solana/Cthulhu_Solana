@@ -25,36 +25,46 @@
       Tracking the Untrackable | Charting the Unchartable
     </div>
     <div class="links">
+      <a href="index.html">Home</a>
       <a href="https://twitter.com/Cthulhu_Solana">Twitter</a>
       <a href="https://dexscreener.com">Dexscreener</a>
-      <a href="https://t.me/CthulhuCoin">Telegram</a>
-      <a href="https://www.nytimes.com/">Read in NYT</a>
     </div>
   </header>
+
+  <!-- Character Slideshow -->
+  <section class="slideshow">
+    <h2 class="section-title">The Eldritch Gallery</h2>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="char/ch01.png" alt="Character 1" class="slide-image">
+      </div>
+      <div class="slide fade">
+        <img src="char/ch02.png" alt="Character 2" class="slide-image">
+      </div>
+      <div class="slide fade">
+        <img src="char/ch03.png" alt="Character 3" class="slide-image">
+      </div>
+      <div class="slide fade">
+        <img src="char/ch04.png" alt="Character 4" class="slide-image">
+      </div>
+    </div>
+    <div class="slideshow-controls">
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+  </section>
 
   <!-- Memes Section -->
   <section>
     <h2 class="section-title">Memes From the Abyss</h2>
     <div class="meme-gallery">
-      <div class="meme-item" title="Cthulhu on Zoom: You’re on Mute">
+      <div class="meme-item large">
         <img src="memes/meme-01.png" alt="Cthulhu on Zoom">
         <p>"Cthulhu on Zoom: You’re on Mute"</p>
       </div>
-      <div class="meme-item" title="Tentacle Machine Learning">
+      <div class="meme-item large">
         <img src="memes/meme-02.png" alt="Tentacle Machine Learning">
         <p>"Tentacle Machine Learning"</p>
-      </div>
-      <div class="meme-item" title="Deep Sea = Deep Learning">
-        <img src="memes/meme-03.png" alt="Deep Sea = Deep Learning">
-        <p>"Deep Sea = Deep Learning"</p>
-      </div>
-      <div class="meme-item" title="When the AI Model Goes Rogue">
-        <img src="memes/meme-04.png" alt="When the AI Model Goes Rogue">
-        <p>"When the AI Model Goes Rogue"</p>
-      </div>
-      <div class="meme-item" title="Sanity: 404 Not Found">
-        <img src="memes/meme-05.png" alt="Sanity: 404 Not Found">
-        <p>"Sanity: 404 Not Found"</p>
       </div>
     </div>
   </section>
@@ -71,32 +81,6 @@
     </div>
     <div class="about-text">
       Like Cthulhu rising from his submerged crypt, AI emerges as a paradox: powerful yet fragile, a tool yet a threat. To summon AI is to summon the unknown. Are we ready to face what we’ve created?
-    </div>
-  </section>
-
-  <!-- Interactive Features -->
-  <section>
-    <h2 class="section-title">Interactive Elements</h2>
-    <div class="interactive">
-      <div>
-        <h3>Generate Your Cthulhu Prophecy</h3>
-        <p>Enter a topic, and summon a Lovecraftian prophecy tailored to your query:</p>
-        <input type="text" placeholder="Type your query..." id="prophecy-input">
-        <button id="generate-prophecy">Summon Prophecy</button>
-        <div id="prophecy-output"></div>
-      </div>
-      <div>
-        <h3>Build Your Eldritch Network</h3>
-        <p>Visualize your network and unlock cosmic predictions:</p>
-        <button id="build-network">Start Building</button>
-      </div>
-      <div>
-        <h3>Tentacle-fy Your Avatar</h3>
-        <p>Upload a profile picture and see yourself transformed into an eldritch being:</p>
-        <input type="file" id="avatar-upload">
-        <canvas id="avatar-preview"></canvas>
-        <button id="download-avatar">Download Avatar</button>
-      </div>
     </div>
   </section>
 
