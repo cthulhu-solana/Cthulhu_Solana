@@ -3,8 +3,8 @@ body {
   margin: auto;
   width: 600px;
   font-family: monospace;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 header {
@@ -15,29 +15,34 @@ header {
 .title {
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   margin-bottom: 15px;
+  color: #333333;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .action-links {
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .links a {
   margin: 5px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
+  color: #0066cc;
 }
 
 .links a:hover {
@@ -45,7 +50,7 @@ header {
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -55,11 +60,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 15px;
 }
 
 .meme-item {
-  width: 200px;
+  width: 150px;
   text-align: center;
 }
 
@@ -67,25 +72,93 @@ header {
   width: 100%;
   border: 2px solid black;
   border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.meme-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.meme-item p {
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .about-text {
   text-align: justify;
   margin: 20px 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.interactive {
+  margin: 20px 0;
 }
 
 .interactive h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.footer-text {
-  font-size: 14px;
+.interactive p {
+  font-size: 12px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.interactive input[type="text"],
+.interactive input[type="file"] {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.interactive button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid black;
+  background-color: #0066cc;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.interactive button:hover {
+  background-color: #004999;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 footer {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
+  margin-top: 40px;
+  color: #333333;
+}
+
+.footer-text {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
